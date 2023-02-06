@@ -5,4 +5,208 @@
     margin: 0;
     text-decoration: none;
     font-family: 'Roboto Mono', sans-serif;
+    box-sizing: border-box;
+    
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 50vw;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 47.1547px rgba(148, 146, 120, 0.23);
+    border-radius: 21.434px;
+    overflow: hidden;
+    /* padding: 0 10px; */
+}
+.text{
+    font-weight: 700;
+    font-size: .8vw;
+    line-height: 20px;
+    color: #333333;    
+}
+.namber{
+    font-weight: 700;
+    font-size: 5vw;
+    color: #333333;
+}
+.jcal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 37px;
+}
+.container > div{
+    height: 25%;
+}
+.tip-amount__container{
+    border-bottom: 1px solid #dedede;
+}
+input[type="radio"]{
+    display: none;
+}
+
+input[type="text"]{
+    width: 100%;
+    border: none ;
+    background: none;
+    outline: none;
+    box-sizing: border-box;
+    border-bottom: 3px dashed #B3B3B3;
+    font-weight: 700;
+    font-size: 3vw;
+    line-height: inherit;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+
+/* input part of form start  */
+.result__container {
+    display: flex;
+    background-color: #f7f7f7;
+    padding: 0;
+    border-radius: 21px 21px 0 0 ;
+    align-items: center;
+}
+.bill-amount {
+    width: 64%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1vw;
+    border-right: 1.0717px solid #DEDEDE;
+    
+
+}
+.bill-amount__content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   
+}
+.bill-amount__content input[type="text"]{
+    background: url('./img/dollar.svg') left 30px top 9px / 8% no-repeat;
+} 
+.number-of-person__content input[type="text"]{
+    background: url('./img/people.svg') left 2px top 14px / 20% no-repeat;
+} 
+
+
+.text-input {
+    font-weight: 700;
+    font-size: .8vw;
+    /* line-height: 20px; */
+    text-align: center;
+}
+.number-of-person {
+    width: 34%;
+    padding: 0 1vw;
+}
+.number-of-person__content {
+}
+/* input part of form end */
+
+/* calculate percente */
+.calculate__container {
+    
+}
+.persent {
+    display: flex;
+    justify-content: space-around;
+    background-color: #eee;
+    height: 50%;
+    align-items: center;
+}
+input[type="radio"] + label{
+    width: 8vw;
+    height: 4vw;
+    background-color: #ffffff;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #60C1B6;
+    cursor: pointer;
+}
+input[type="radio"]:checked + label{
+    background: #60C1B6;
+    color: #fff;
+}
+.calculate {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 2vw;
+}
+.button {
+    border: none;
+    background: #ED7861;
+    box-shadow: 0px 1.0717px 8.57359px rgba(0, 0, 0, 0.05);
+    border-radius: 17.1472px;
+    padding: 1.2vw 7vw;
+    color: white;
+}
+
+@media screen and (max-width: 1020px) {
+    .container{
+        width: 70vw;
+        height: 80vw;
+    }
+    .text{
+        font-size: 1.5vw;
+    }
+    .text-input{
+        font-size: 1.5vw;
+    }
+    input[type="text"]{
+        font-size: 5vw;
+    }
+    .namber{
+        font-size: 6vw;
+    }
+    input[type="radio"] + label{
+        width: 12vw;
+        height: 6vw;
+    }
+}
+@media screen and (max-width: 665px){
+    .container{
+        width: 70vw;
+        height: 90vw;
+    }
+    .bill-amount__content input[type="text"]{
+        background: url('./img/dollar.svg') left 30px top 3px / 8% no-repeat;
+    } 
+    .number-of-person__content input[type="text"]{
+        background: url('./img/people.svg') left 2px top 8px / 20% no-repeat;
+    } 
+    
+    
+}
+@media screen and (max-width: 400px){
+    .container{
+        width: 80vw;
+        height: 130vw;
+    }
+    .bill-amount__content input[type="text"]{
+        background: url('./img/dollar.svg') left 30px top 3px / 8% no-repeat;
+    } 
+    .number-of-person__content input[type="text"]{
+        background: url('./img/people.svg') left 2px top 8px / 20% no-repeat;
+    } 
+    input[type="radio"] + label{
+        width: 16vw;
+        height: 8vw;
+    }
+    
 }
