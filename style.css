@@ -136,10 +136,21 @@ input[type="radio"] + label{
     align-items: center;
     color: #60C1B6;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 input[type="radio"]:checked + label{
     background: #60C1B6;
     color: #fff;
+    transition: all 0.3s ease 0s;
+}
+input[type="radio"] + label:hover{
+    background: #209789;
+    box-shadow:   0px 10px 17px -4px rgba(0,0,0,0.75);
+    color: #DEDEDE;
+}
+input[type="radio"] + label:active{
+    box-shadow: none;
+    box-shadow: 0px 10px 5px -4px rgba(0, 0, 0, 0.25);
 }
 .calculate {
     height: 50%;
@@ -155,6 +166,15 @@ input[type="radio"]:checked + label{
     border-radius: 17.1472px;
     padding: 1.2vw 7vw;
     color: white;
+    transition: all 0.3s ease 0s;
+}
+.button:hover{
+    background-color: #cf3f23;
+    box-shadow:   0px 10px 17px -4px rgba(0,0,0,0.75);
+}
+.button:active{
+    box-shadow: none;
+    box-shadow: 0px 10px 5px -4px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (max-width: 1020px) {

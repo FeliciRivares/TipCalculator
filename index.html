@@ -12,22 +12,22 @@
         <div class="container">
             <div class="tip-amount__container jcal">
                 <h3 class="text">Tip Amount</h3>
-                <span class="tip-amount namber" > <sup>$</sup>4.02</span>
+                <p class="tip-amount namber" > <sup>$</sup> <span id="tip-amount">0.00</span> </p>
             </div>
             <div class="total-per__container jcal">
                 <h3 class="text">Total Per Person</h3>
-                <span class="total-per namber" > <sup>$</sup>12.02</span>
+                <p class="total-per namber" > <sup>$</sup> <span id="total-per" >0.00</span> </p>
             </div>
             <div class="result__container ">
                 <div class="bill-amount">
                     <div class="bill-amount__content">
-                        <input class="input" type="text" name="bill-amount" value="102.02" maxlength="7" id="billAmount">
+                        <input class="input" type="text" name="bill-amount" value="0" maxlength="5" id="billAmount">
                     </div>
                     <div class="text-input">Total Per Person</div>
                 </div>
                 <div class="number-of-person">
                     <div class="number-of-person__content">
-                        <input type="text" name="number-of-person" value="25" maxlength="2" id="numberOfPerson">
+                        <input type="text" name="number-of-person" value="1" maxlength="2" id="numberOfPerson">
                     </div>
                     <div class="text-input">Number Of Person</div>
                 </div>
@@ -35,20 +35,20 @@
             <div class="calculate__container">
                 <div class="persent">
                     <div>
-                        <input type="radio" name="tip" value="5%" id="five-percente">
+                        <input  type="radio" name="tip" value="5%" id="five-percente">
                         <label for="five-percente">5%</label>
                     </div>
                     <div>
-                        <input type="radio" name="tip" value="10%" id="ten-percente">
-                        <label for="five-percente">10%</label>
+                        <input checked  type="radio" name="tip" value="10%" id="ten-percente">
+                        <label for="ten-percente">10%</label>
                     </div>
                     <div>
                         <input type="radio" name="tip" value="15%" id="fifteen-percente">
-                        <label for="five-percente">15%</label>
+                        <label for="fifteen-percente">15%</label>
                     </div>
                     <div >
                         <input type="radio" name="tip" value="20%" id="twenty-percente">
-                        <label for="five-percente">20%</label>
+                        <label for="twenty-percente">20%</label>
                     </div>
                 </div>
                 <div class="calculate">
